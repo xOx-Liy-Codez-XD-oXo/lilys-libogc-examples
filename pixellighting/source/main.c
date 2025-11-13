@@ -116,11 +116,8 @@ int main(int argc, char **argv) {
 
 		//Reflection map needs another matrix to be calculated
 		guMtxConcat(viewreflec, spin, model);
-		Mtx reflec, s, t;
-		guMtxScale(s, 0.5f, -0.5f, 0.0f);
-		guMtxTrans(t, 0.5f, 0.5f, 1.0f);
-		guMtxConcat(s, model, model);
-		guMtxConcat(t, model, model);
+		guMtxScaleApply(model, model, 0.5f, -0.5f, 0.0f);
+		guMtxTransApply(model, model, 0.5f, 0.5f, 1.0f);
 		GX_LoadTexMtxImm(model, GX_TEXMTX0, GX_MTX3x4);
 
 		ag_config_Teapot(0);
