@@ -5,3 +5,8 @@ Advanced libogc examples by lily
 Shows a twisting cube. Demonstrates how to use basic skinning that comes at almost no cost
 
 ![](/assets/twistingcube-screenie.png)
+
+## pixellighting
+Emulate the look of pixel lighting with reflection mapping
+
+![](/assets/pixellightingscreenie.png)
